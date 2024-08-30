@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <div class="content">
+        <div id="screen">Start Calculate...</div>
+        <button onclick="changeText(7)">7</button>
+        <button onclick="changeText(8)">8</button>
+        <button onclick="changeText(9)">9</button>
+        <button class="largeButton" onclick="clearScreen()">CE</button>
+        <button onclick="changeText(4)">4</button>
+        <button onclick="changeText(5)">5</button>
+        <button onclick="changeText(6)">6</button>
+        <button onclick="changeText('+')">+</button>
+        <button onclick="changeText('-')">-</button>
+        <button onclick="changeText(1)">1</button>
+        <button onclick="changeText(2)">2</button>
+        <button onclick="changeText(3)">3</button>
+        <button onclick="changeText('\u00D7')">&times</button>
+        <button onclick="changeText('\u00F7')">&divide</button>
+        <button onclick="sqrt()">&#8730</button>
+        <button onclick="changeText(0)">0</button>
+        <button onclick="square()">x&#178</button>
+        <button class="largeButton" id="equals" onclick="operation()">=</button>
+    </div>
+</body>
+
+</html>
