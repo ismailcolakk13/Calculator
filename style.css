@@ -1,92 +1,90 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
 }
 
 html {
-    background-image: radial-gradient(#333, rgb(177, 160, 160));
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  background-image: radial-gradient(#333, rgb(177, 160, 160));
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 body {
-    display: flex;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
 }
 
 .content {
-    display: grid;
-    grid-template-columns: repeat(5, 80px);
-    grid-template-rows: 120px repeat(4, 80px);
-    gap: 10px;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: #333;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: grid;
+  grid-template-columns: repeat(5, 80px);
+  grid-template-rows: 120px repeat(4, 80px);
+  gap: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-.content h2{
-    grid-column: span 5;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: lighter;
-    font-size: 20px;
+.content h2 {
+  grid-column: span 5;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: lighter;
+  font-size: 20px;
 }
 
 #screen {
-    border: 1px solid white;
-    grid-column: span 5;
-    background-color: #444;
-    color: white;
-    font-size: 40px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 0 20px;
-    border-radius: 5px;
-    overflow: hidden;
-    
+  border: 1px solid white;
+  grid-column: span 5;
+  background-color: #444;
+  color: white;
+  font-size: 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 20px;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 button {
-    background-color: #666;
-    color: white;
-    font-size: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 1s ease;
-
+  background-color: #666;
+  color: white;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 1s ease;
 }
 
 button:hover {
-    background-color: #777;
+  background-color: #777;
 }
 
 button:active {
-    background-color: #888;
+  background-color: #888;
 }
 
 #equals {
-    transition: background-color 1s ease;
-    /* Transition for the background color */
+  transition: background-color 1s ease;
+  /* Transition for the background color */
 }
 
 #equals.fade-out {
-    background-color: #ff0000;
-    /* New color for the fade effect */
+  background-color: #ff0000;
+  /* New color for the fade effect */
 }
 
 .largeButton {
-    grid-column: span 2;
+  grid-column: span 2;
 }
