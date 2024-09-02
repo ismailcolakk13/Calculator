@@ -1,7 +1,7 @@
 const getScreen = document.getElementById("screen");
 
 function changeText(num) {
-  if (getScreen.innerHTML === "Hesaplamaya başla...") {
+  if (getScreen.innerHTML === "Start Calculate...") {
     clearScreen();
   }
   getScreen.innerHTML += num;
@@ -12,11 +12,13 @@ function clearScreen() {
 
 function sqrt() {
   let num = getScreen.innerHTML;
-  getScreen.innerHTML = Math.sqrt(num);
+  let numStr = Math.sqrt(num).toPrecision(10); // Limits the number to 10 significant digits
+  getScreen.innerHTML = parseFloat(numStr);
 }
 function square(x) {
   let num = getScreen.innerHTML;
-  getScreen.innerHTML = num * num;
+  let numStr = (num*num).toPrecision(10); // Limits the number to 10 significant digits
+  getScreen.innerHTML = parseFloat(numStr);
 }
 
 function operation() {
